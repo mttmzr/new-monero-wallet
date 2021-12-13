@@ -4,7 +4,7 @@ const { program } = require('commander')
 
 program.version('0.1.1')
 
-program.option('-m', '--from-mnemonic <mnemonic>', 'mnemonic phrase to derive keys from')
+program.option('-m, --from-mnemonic <mnemonic>', 'mnemonic phrase to derive keys from')
 
 program.parse(process.argv)
 

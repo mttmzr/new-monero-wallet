@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 
-const { programm } = require('commander')
+const { program } = require('commander')
 
-programm.version('0.1.0')
+program.version('0.1.1')
 
-programm.option('-m', '--from-mnemonic <mnemonic>')
+program.option('-m', '--from-mnemonic <mnemonic>')
 
-programm.parse(process.argv)
+program.parse(process.argv)
 
 const main = async () => {
   const WABridge = await require('@mymonero/mymonero-monero-client')({})
 
-  const mnemonic = programm.opts().mnemonic
+  const mnemonic = program.opts().mnemonic
 
   if (mnemonic) {
     console.log(WABridge.seedAndKeysFromMnemonic(mnemonic, 'MAINNET'))

@@ -1,0 +1,26 @@
+{
+  "name": "new-monero-wallet",
+  "version": "1.0.0",
+  "description": "Easily generate a new Monero wallet on the command line.",
+  "main": "index.js",
+  "bin": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mttmzr/new-monero-wallet.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Mttmzr",
+    "email": "mttmzr@users.noreply.github.com",
+    "url": "https://github.com/mttmzr"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mttmzr/new-monero-wallet/issues"
+  },
+  "homepage": "https://github.com/mttmzr/new-monero-wallet#readme",
+  "dependencies": {
+    "@mymonero/mymonero-monero-client": "^1.3.0",
+    "commander": "^8.3.0"
+  }
+}
